@@ -1,0 +1,6 @@
+{
+  "port": 5000,
+  "jwtSecret": "rest api MERN",
+  "mongoUri": "mongodb://localhost:27017/?readPreference=primary&rest=MongoDB%20Compass%20Community&ssl=false",
+  "baseUrl": "http://localhost:5000"
+}
