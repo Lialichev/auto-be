@@ -47,9 +47,9 @@ router.post(
     }
   });
 
-// /api/auth/login
+// /api/auth/sign-in
 router.post(
-  '/login',
+  '/sign-in',
   [
     check('email', 'Data isn`t valid').normalizeEmail().isEmail(),
     check('password', 'Data isn`t valid').exists()
@@ -79,11 +79,11 @@ router.post(
         return res.status(400).json({ message: 'Error auth' })
       }
 
-      const token = jwt.sign({ userId: user.id }, config.get('jwtSecret'), { expiresIn: '1h' });
+      const token = jwt.sign({ user_id: user.id }, config.get('jwtSecret'), { expiresIn: '1h' });
 
       res.json({
         token,
-        userId: user.id
+        user_id: user.id
       });
 
     } catch (e) {
