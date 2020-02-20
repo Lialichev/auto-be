@@ -2,6 +2,7 @@ const { Router } = require('express');
 const bcrypt = require('bcryptjs');
 const config = require('config');
 const jwt = require('jsonwebtoken');
+const auth = require('../middleware/auth.middleware');
 const { check, validationResult } = require('express-validator');
 const User = require('../models/User');
 const router = Router();
@@ -45,7 +46,8 @@ router.post(
     } catch (e) {
       res.status(500).json({ message: 'Error sign up' });
     }
-  });
+  }
+);
 
 // /api/auth/sign-in
 router.post(
@@ -89,6 +91,25 @@ router.post(
     } catch (e) {
       res.status(500).json({ message: 'Error auth' })
     }
-  });
+  }
+);
+
+// /api/auth/sign-in
+router.get('/sign-in-me-token', auth, async (req, res) => {
+    try {
+
+      const user = await User.findById(req.user.user_id);
+
+      if (!user) {
+        return res.status(401).json({ message: 'User isn`t defined' });
+      }
+
+      res.json({ user_id: user.id });
+
+    } catch (e) {
+      res.status(500).json({ message: 'Error auth' })
+    }
+  }
+);
 
 module.exports = router;

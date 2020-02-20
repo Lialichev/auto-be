@@ -37,7 +37,7 @@ router.post('/follow', auth, async (req, res) => {
     const book = await Book.findById(id);
 
     if (!book) {
-      return res.status(404).json({ book });
+      return res.status(400).json({ book });
     }
 
     if (book.followers.includes(req.user.user_id)) {
@@ -62,7 +62,7 @@ router.post('/unfollow', auth, async (req, res) => {
     const book = await Book.findById(id);
 
     if (!book) {
-      return res.status(404).json({ book });
+      return res.status(400).json({ book });
     }
 
     if (req.user.user_id === book.creator.toString()) {

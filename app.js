@@ -21,7 +21,9 @@ async function start() {
       useCreateIndex: true,
     });
 
-    app.listen(PORT, () => console.log(`App has been started on port ${PORT}`));
+    console.log(`DB has been connected - ${config.get('mongoUri')}`);
+
+    app.listen(PORT, () => console.log(`App has been started ${PORT}`));
 
   } catch (e) {
 
