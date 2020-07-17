@@ -7,7 +7,8 @@
   "private": false,
   "scripts": {
     "start": "node app.js",
-    "server": "nodemon app.js"
+    "server": "nodemon app.js",
+    "init:db": "node ./init"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -15,6 +16,7 @@
     "express": "^4.17.1",
     "express-validator": "^6.4.0",
     "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.19",
     "mongoose": "^5.9.1",
     "shortid": "^2.2.15"
   },

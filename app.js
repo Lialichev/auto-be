@@ -7,7 +7,8 @@ const app = express();
 app.use(express.json({ extended: true }));
 
 app.use('/api/auth', require('./routes/auth.routes'));
-app.use('/api/book', require('./routes/book.routes'));
+app.use('/api/category', require('./routes/category.routes'));
+app.use('/api/brand', require('./routes/brand.routes'));
 
 const PORT = config.get('port') || 5000;
 
@@ -19,6 +20,7 @@ async function start() {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
+      useFindAndModify: false
     });
 
     console.log(`DB has been connected - ${config.get('mongoUri')}`);

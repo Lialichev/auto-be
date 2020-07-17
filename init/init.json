@@ -1,0 +1,1381 @@
+[
+  {
+    "cat_name": "Легковые",
+    "brands": [
+      {
+        "brand_name": "Abarth",
+        "models": [
+          "Fiat 500"
+        ]
+      },
+      {
+        "brand_name": "Acura",
+        "models": [
+          "ILX",
+          "Integra",
+          "MDX",
+          "RDX",
+          "RL",
+          "RLX",
+          "RSX",
+          "SLX",
+          "TL",
+          "TLX",
+          "TSX",
+          "ZDX"
+        ]
+      },
+      {
+        "brand_name": "Adler",
+        "models": [
+          "Stromform"
+        ]
+      },
+      {
+        "brand_name": "Aero",
+        "models": [
+          "30"
+        ]
+      },
+      {
+        "brand_name": "Alfa Romeo",
+        "models": [
+          "145",
+          "146",
+          "147",
+          "149",
+          "155",
+          "156",
+          "159",
+          "164",
+          "166",
+          "33",
+          "4C",
+          "75",
+          "Brera",
+          "Giulia",
+          "Giulietta",
+          "GT",
+          "GTV",
+          "Mito",
+          "Stelvio"
+        ]
+      },
+      {
+        "brand_name": "Alpine",
+        "models": [
+          "A110"
+        ]
+      },
+      {
+        "brand_name": "Altamarea",
+        "models": []
+      },
+      {
+        "brand_name": "AMC",
+        "models": [
+          "Matador"
+        ]
+      },
+      {
+        "brand_name": "Aro",
+        "models": [
+          "10",
+          "240",
+          "243",
+          "244",
+          "246"
+        ]
+      },
+      {
+        "brand_name": "Asia",
+        "models": [
+          "Rocsta"
+        ]
+      },
+      {
+        "brand_name": "Aston Martin",
+        "models": [
+          "DB11",
+          "DB9",
+          "Rapide"
+        ]
+      },
+      {
+        "brand_name": "ATS Corsa",
+        "models": [
+          "RR Turbo"
+        ]
+      },
+      {
+        "brand_name": "Audi",
+        "models": [
+          "100",
+          "200",
+          "4000",
+          "80",
+          "90",
+          "A1",
+          "A2",
+          "A3",
+          "A3 Sportback",
+          "A4",
+          "A4 Allroad",
+          "A5",
+          "A6",
+          "A6 Allroad",
+          "A7",
+          "A8",
+          "Allroad",
+          "Coupe",
+          "e-tron",
+          "Q2",
+          "Q3",
+          "Q5",
+          "Q7",
+          "Q8",
+          "R8",
+          "RS3",
+          "RS4",
+          "RS5",
+          "RS6",
+          "RS7",
+          "S3",
+          "S4",
+          "S5",
+          "S6",
+          "S7",
+          "S8",
+          "SQ5",
+          "SQ7",
+          "SQ8",
+          "TT",
+          "TT RS",
+          "TTS",
+          "V8"
+        ]
+      },
+      {
+        "brand_name": "Avia",
+        "models": [
+          "31"
+        ]
+      },
+      {
+        "brand_name": "Baoya",
+        "models": [
+          "New Energy"
+        ]
+      },
+      {
+        "brand_name": "Barkas (Баркас)",
+        "models": [
+          "1001",
+          "B1000",
+          "VEB"
+        ]
+      },
+      {
+        "brand_name": "Baw",
+        "models": [
+          "Luling",
+          "Reach"
+        ]
+      },
+      {
+        "brand_name": "Bentley",
+        "models": [
+          "Bentayga",
+          "Continental",
+          "Continental GT",
+          "Continental GT V8",
+          "Continental Supersports",
+          "Flying Spur",
+          "Mulsanne"
+        ]
+      },
+      {
+        "brand_name": "Bio Auto",
+        "models": [
+          "evA-3"
+        ]
+      },
+      {
+        "brand_name": "BMW",
+        "models": [
+          "1 Series",
+          "114",
+          "116",
+          "118",
+          "120",
+          "125",
+          "128",
+          "130",
+          "135",
+          "140",
+          "2 Series",
+          "2 Series Active Tourer",
+          "2 Series Gran Tourer",
+          "2000",
+          "216",
+          "218",
+          "220",
+          "228",
+          "230",
+          "235",
+          "3 Series",
+          "3 Series GT",
+          "316",
+          "318",
+          "320",
+          "321",
+          "323",
+          "324",
+          "325",
+          "328",
+          "330",
+          "335",
+          "340",
+          "4 Series",
+          "4 Series Gran Coupe",
+          "420",
+          "428",
+          "430",
+          "435",
+          "440",
+          "5 Series",
+          "5 Series GT",
+          "518",
+          "520",
+          "520 GT",
+          "523",
+          "524",
+          "525",
+          "528",
+          "528i GT",
+          "530",
+          "530 GT",
+          "535",
+          "535 GT",
+          "540",
+          "545",
+          "550",
+          "550 GT",
+          "6 Series",
+          "6 Series Gran Coupe",
+          "6 Series GT",
+          "630",
+          "635",
+          "640",
+          "645",
+          "650",
+          "7 Series",
+          "725",
+          "728",
+          "730",
+          "732",
+          "735",
+          "740",
+          "745",
+          "750",
+          "760",
+          "8 Series",
+          "8 Series Gran Coupe",
+          "840",
+          "850",
+          "Active Hybrid 3",
+          "Active Hybrid 5",
+          "Active Hybrid 7",
+          "Alpina",
+          "I3",
+          "I8",
+          "M Series",
+          "M2",
+          "M3",
+          "M4",
+          "M5",
+          "M6",
+          "M6 Gran Coupe",
+          "Neue Klasse",
+          "R 1150",
+          "R Series",
+          "X Series",
+          "X1",
+          "X2",
+          "X3",
+          "X3 M",
+          "X4",
+          "X4 M",
+          "X5",
+          "X5 M",
+          "X6",
+          "X6 M",
+          "X7",
+          "Z Series",
+          "Z3 M",
+          "Z4"
+        ]
+      },
+      {
+        "brand_name": "BMW-Alpina",
+        "models": [
+          "B5"
+        ]
+      },
+      {
+        "brand_name": "Brilliance",
+        "models": [
+          "BS4",
+          "BS6",
+          "M 1",
+          "M 2"
+        ]
+      },
+      {
+        "brand_name": "Bristol",
+        "models": [
+          "Brigand",
+          "Britannia",
+          "Fighter"
+        ]
+      },
+      {
+        "brand_name": "Buick",
+        "models": [
+          "Cascada",
+          "Eight",
+          "Enclave",
+          "Encore",
+          "Envision",
+          "LaCrosse",
+          "LE Sabre",
+          "Regal",
+          "Regal GS",
+          "Skylark",
+          "Super",
+          "Wildcat"
+        ]
+      },
+      {
+        "brand_name": "BYD",
+        "models": [
+          "E6",
+          "F0",
+          "F3",
+          "F3R",
+          "F6",
+          "Flyer",
+          "G3",
+          "G6",
+          "New F3",
+          "S6",
+          "Yuan"
+        ]
+      },
+      {
+        "brand_name": "Cadillac",
+        "models": [
+          "ATS",
+          "BLS",
+          "CT6",
+          "CTS",
+          "DE Ville",
+          "DTS",
+          "Eldorado",
+          "ELR",
+          "Escalade",
+          "Fleetwood",
+          "Seville",
+          "SRX",
+          "STS",
+          "XT5",
+          "XTS"
+        ]
+      },
+      {
+        "brand_name": "Chana",
+        "models": "Benni"
+      },
+      {
+        "brand_name": "Changan",
+        "models": [
+          "Ideal"
+        ]
+      },
+      {
+        "brand_name": "Changhe",
+        "models": [
+          "Ideal",
+          "Ideal II"
+        ]
+      },
+      {
+        "brand_name": "Chery",
+        "models": [
+          "A13",
+          "A15",
+          "Amulet",
+          "B11",
+          "Beat",
+          "CrossEastar",
+          "E 5",
+          "Eastar",
+          "Elara",
+          "Flagcloud",
+          "Jaggi",
+          "Karry",
+          "Kimo",
+          "M11",
+          "Oriental Son",
+          "QQ",
+          "SQR",
+          "Tiggo",
+          "Tiggo 2",
+          "Tiggo 3",
+          "Tiggo 4",
+          "Tiggo 5",
+          "Tiggo 7"
+        ]
+      },
+      {
+        "brand_name": "Chevrolet",
+        "models": [
+          "Alero",
+          "Avalanche",
+          "Aveo",
+          "Beretta",
+          "Blazer",
+          "Bolt EV",
+          "Camaro",
+          "Camaro Convertible",
+          "Caprice",
+          "Captiva",
+          "Cavalier",
+          "Chevy",
+          "Cheyenne",
+          "Cobalt",
+          "Colorado",
+          "Corsica",
+          "Corvette",
+          "Cruze",
+          "Epica",
+          "Equinox",
+          "Evanda",
+          "Explorer",
+          "Express груз.",
+          "Express пасс.",
+          "Geo Storm",
+          "HHR",
+          "Impala",
+          "Kalos",
+          "Lacetti",
+          "Lanos",
+          "Lumina",
+          "Malibu",
+          "Matiz",
+          "Niva",
+          "Nubira",
+          "Orlando",
+          "Rezzo",
+          "S-10",
+          "Silverado",
+          "Sonic",
+          "Spark",
+          "SSR",
+          "Suburban",
+          "Tacuma",
+          "Tahoe",
+          "Tracker",
+          "TrailBlazer",
+          "Traverse",
+          "Trax",
+          "Ventura",
+          "Volt"
+        ]
+      },
+      {
+        "brand_name": "Chrysler",
+        "models": [
+          "180",
+          "200",
+          "300",
+          "300 C",
+          "300 M",
+          "300 S",
+          "Concorde",
+          "Crossfire",
+          "Grand Voyager",
+          "Intrepid",
+          "LE Baron",
+          "LHS",
+          "Neon",
+          "Pacifica",
+          "Phantom",
+          "PT Cruiser",
+          "Saratoga",
+          "Sebring",
+          "Stratus",
+          "Town & Country",
+          "Vision",
+          "Voyager"
+        ]
+      },
+      {
+        "brand_name": "Citroen",
+        "models": [
+          "AX",
+          "Berlingo",
+          "Berlingo груз.",
+          "Berlingo пасс.",
+          "BX",
+          "C-Crosser",
+          "C-Elysee",
+          "C-Zero",
+          "C1",
+          "C2",
+          "C25",
+          "C25 пасс.",
+          "C3",
+          "C3 Aircross",
+          "C3 Picasso",
+          "C4",
+          "C4 Aircross",
+          "C4 Cactus",
+          "C4 Picasso",
+          "C5",
+          "C5 Aircross",
+          "C6",
+          "C8",
+          "CX",
+          "DS3",
+          "DS4",
+          "DS5",
+          "e-Berlingo Multispace",
+          "Evasion",
+          "Grand C4 Picasso",
+          "Jumper",
+          "Jumper груз-пасс.",
+          "Jumper груз.",
+          "Jumper пасс.",
+          "Jumpy",
+          "Jumpy груз.",
+          "Jumpy груз.-пасс.",
+          "Jumpy пасс.",
+          "Nemo",
+          "Nemo груз.",
+          "Nemo пасс.",
+          "Oltcit",
+          "Saxo",
+          "Space Tourer",
+          "Visa",
+          "Xantia",
+          "XM",
+          "Xsara",
+          "Xsara Picasso",
+          "ZX"
+        ]
+      },
+      {
+        "brand_name": "Dacia",
+        "models": [
+          "1310",
+          "Dokker",
+          "Dokker груз.",
+          "Dokker пасс.",
+          "Duster",
+          "Lodgy",
+          "Logan",
+          "Logan MCV",
+          "Nova",
+          "Sandero",
+          "Sandero StepWay",
+          "Solenza",
+          "SuperNova"
+        ]
+      },
+      {
+        "brand_name": "Dadi",
+        "models": [
+          "BDD",
+          "Bliss",
+          "Shuttle",
+          "Smoothing"
+        ]
+      },
+      {
+        "brand_name": "Daewoo",
+        "models": [
+          "Damas",
+          "Espero",
+          "Gentra",
+          "Kalos",
+          "Lacetti",
+          "Lanos",
+          "LE Mans",
+          "Leganza",
+          "Lublin",
+          "Lublin груз.",
+          "Matiz",
+          "Nexia",
+          "Nubira",
+          "Prince",
+          "Racer",
+          "Royale",
+          "Sens",
+          "Super Salon",
+          "Tacuma",
+          "Tico"
+        ]
+      },
+      {
+        "brand_name": "DAF",
+        "models": [
+          "600"
+        ]
+      },
+      {
+        "brand_name": "DAF / VDL",
+        "models": [
+          "ldv-400 convoy"
+        ]
+      },
+      {
+        "brand_name": "Daihatsu",
+        "models": [
+          "Applause",
+          "Charade",
+          "Charmant",
+          "Copen",
+          "Cuore",
+          "Domino",
+          "Gran Move",
+          "Materia",
+          "Move",
+          "Rocky",
+          "Sirion",
+          "Terios",
+          "Tianjin",
+          "YRV"
+        ]
+      },
+      {
+        "brand_name": "DKW",
+        "models": []
+      },
+      {
+        "brand_name": "Dodge",
+        "models": [
+          "Aries",
+          "Avenger",
+          "Caliber",
+          "Caravan",
+          "Challenger",
+          "Charger",
+          "Colt",
+          "Dakota",
+          "Dart",
+          "Durango",
+          "Grand Caravan",
+          "Intrepid",
+          "Journey",
+          "Magnum",
+          "Neon",
+          "Nitro",
+          "RAM",
+          "RAM 1500",
+          "RAM 2500",
+          "Ram Van",
+          "Shadow",
+          "Sprinter",
+          "Stealth",
+          "Stratus",
+          "Viper"
+        ]
+      },
+      {
+        "brand_name": "Dongfeng",
+        "models": [
+          "EQ",
+          "EQ1021",
+          "ER30"
+        ]
+      },
+      {
+        "brand_name": "DS",
+        "models": [
+          "7 Crossback"
+        ]
+      },
+      {
+        "brand_name": "Eagle",
+        "models": [
+          "Vision"
+        ]
+      },
+      {
+        "brand_name": "FAW",
+        "models": [
+          "6371 груз.",
+          "6371 пасс.",
+          "Besturn",
+          "V2",
+          "V5"
+        ]
+      },
+      {
+        "brand_name": "Ferrari",
+        "models": [
+          "458 Italia",
+          "599",
+          "599 GTO",
+          "California",
+          "F12"
+        ]
+      },
+      {
+        "brand_name": "Fiat",
+        "models": [
+          "124",
+          "125",
+          "126",
+          "131",
+          "500",
+          "500 C",
+          "500 L",
+          "500 X",
+          "500е",
+          "Abarth",
+          "Albea",
+          "Argenta",
+          "Barchetta",
+          "Brava",
+          "Bravo",
+          "Cinquecento",
+          "Coupe",
+          "Croma",
+          "Doblo",
+          "Doblo Panorama",
+          "Doblo груз.",
+          "Doblo груз.-пасс.",
+          "Doblo пасс.",
+          "Ducato",
+          "Ducato груз.",
+          "Ducato груз.-пасс.",
+          "Ducato пасс.",
+          "Fiorino груз.",
+          "Fiorino пасс.",
+          "Freemont",
+          "Fullback",
+          "Grande Punto",
+          "Idea",
+          "Linea",
+          "Marea",
+          "Multipla",
+          "Palio",
+          "Panda",
+          "Punto",
+          "Punto Evo",
+          "Qubo пасс.",
+          "Regata",
+          "Ritmo",
+          "Scudo",
+          "Scudo груз.",
+          "Scudo груз.-пасс.",
+          "Scudo пасс.",
+          "Sedici",
+          "Seicento",
+          "Siena",
+          "Stilo",
+          "Strada",
+          "Talento",
+          "Talento груз.",
+          "Talento пасс.",
+          "Tempra",
+          "Tipo",
+          "Ulysse",
+          "Uno"
+        ]
+      },
+      {
+        "brand_name": "Fiat-Abarth",
+        "models": []
+      },
+      {
+        "brand_name": "Fisker",
+        "models": []
+      },
+      {
+        "brand_name": "Ford",
+        "models": []
+      },
+      {
+        "brand_name": "FSO",
+        "models": []
+      },
+      {
+        "brand_name": "FUQI",
+        "models": []
+      },
+      {
+        "brand_name": "Geely",
+        "models": []
+      },
+      {
+        "brand_name": "GMC",
+        "models": []
+      },
+      {
+        "brand_name": "Golf Car",
+        "models": []
+      },
+      {
+        "brand_name": "Gonow",
+        "models": []
+      },
+      {
+        "brand_name": "Great Wall",
+        "models": []
+      },
+      {
+        "brand_name": "Groz",
+        "models": []
+      },
+      {
+        "brand_name": "Hafei",
+        "models": []
+      },
+      {
+        "brand_name": "Hanomag",
+        "models": []
+      },
+      {
+        "brand_name": "Haval",
+        "models": []
+      },
+      {
+        "brand_name": "Honda",
+        "models": []
+      },
+      {
+        "brand_name": "Hong Xing",
+        "models": []
+      },
+      {
+        "brand_name": "Huabei",
+        "models": []
+      },
+      {
+        "brand_name": "Huanghai",
+        "models": []
+      },
+      {
+        "brand_name": "Humber",
+        "models": []
+      },
+      {
+        "brand_name": "Hummer",
+        "models": []
+      },
+      {
+        "brand_name": "Hyundai",
+        "models": []
+      },
+      {
+        "brand_name": "Infiniti",
+        "models": []
+      },
+      {
+        "brand_name": "Iran Khodro",
+        "models": []
+      },
+      {
+        "brand_name": "Isuzu",
+        "models": []
+      },
+      {
+        "brand_name": "Iveco",
+        "models": []
+      },
+      {
+        "brand_name": "JAC",
+        "models": []
+      },
+      {
+        "brand_name": "Jaguar",
+        "models": []
+      },
+      {
+        "brand_name": "JCB",
+        "models": []
+      },
+      {
+        "brand_name": "Jeep",
+        "models": []
+      },
+      {
+        "brand_name": "Jiangnan",
+        "models": []
+      },
+      {
+        "brand_name": "Jinbei",
+        "models": []
+      },
+      {
+        "brand_name": "Jonway",
+        "models": []
+      },
+      {
+        "brand_name": "Karosa",
+        "models": []
+      },
+      {
+        "brand_name": "Kia",
+        "models": []
+      },
+      {
+        "brand_name": "Lada",
+        "models": []
+      },
+      {
+        "brand_name": "Lamborghini",
+        "models": []
+      },
+      {
+        "brand_name": "Lancia",
+        "models": []
+      },
+      {
+        "brand_name": "Land Rover",
+        "models": []
+      },
+      {
+        "brand_name": "Landwind",
+        "models": []
+      },
+      {
+        "brand_name": "LDV",
+        "models": []
+      },
+      {
+        "brand_name": "Lexus",
+        "models": []
+      },
+      {
+        "brand_name": "Lifan",
+        "models": []
+      },
+      {
+        "brand_name": "Lincoln",
+        "models": []
+      },
+      {
+        "brand_name": "Lotus",
+        "models": []
+      },
+      {
+        "brand_name": "Marshell",
+        "models": []
+      },
+      {
+        "brand_name": "Maserati",
+        "models": []
+      },
+      {
+        "brand_name": "Maybach",
+        "models": []
+      },
+      {
+        "brand_name": "Mazda",
+        "models": []
+      },
+      {
+        "brand_name": "McLaren",
+        "models": []
+      },
+      {
+        "brand_name": "MEGA",
+        "models": []
+      },
+      {
+        "brand_name": "Mercedes-Benz",
+        "models": []
+      },
+      {
+        "brand_name": "Mercury",
+        "models": []
+      },
+      {
+        "brand_name": "MG",
+        "models": []
+      },
+      {
+        "brand_name": "MINI",
+        "models": []
+      },
+      {
+        "brand_name": "Mitsubishi",
+        "models": []
+      },
+      {
+        "brand_name": "Morris",
+        "models": []
+      },
+      {
+        "brand_name": "MPM Motors",
+        "models": []
+      },
+      {
+        "brand_name": "Nissan",
+        "models": []
+      },
+      {
+        "brand_name": "Nysa (Ныса)",
+        "models": []
+      },
+      {
+        "brand_name": "Oldsmobile",
+        "models": []
+      },
+      {
+        "brand_name": "Opel",
+        "models": []
+      },
+      {
+        "brand_name": "Peugeot",
+        "models": []
+      },
+      {
+        "brand_name": "Plymouth",
+        "models": []
+      },
+      {
+        "brand_name": "Pontiac",
+        "models": []
+      },
+      {
+        "brand_name": "Porsche",
+        "models": []
+      },
+      {
+        "brand_name": "Proton",
+        "models": []
+      },
+      {
+        "brand_name": "Quicksilver",
+        "models": []
+      },
+      {
+        "brand_name": "Ram",
+        "models": []
+      },
+      {
+        "brand_name": "Ravon",
+        "models": []
+      },
+      {
+        "brand_name": "Renault",
+        "models": []
+      },
+      {
+        "brand_name": "Renault Samsung Motors",
+        "models": []
+      },
+      {
+        "brand_name": "Rivian",
+        "models": []
+      },
+      {
+        "brand_name": "Rolls-Royce",
+        "models": []
+      },
+      {
+        "brand_name": "Rover",
+        "models": []
+      },
+      {
+        "brand_name": "Saab",
+        "models": []
+      },
+      {
+        "brand_name": "Saipa",
+        "models": []
+      },
+      {
+        "brand_name": "Samand",
+        "models": []
+      },
+      {
+        "brand_name": "Samson",
+        "models": []
+      },
+      {
+        "brand_name": "Samsung",
+        "models": []
+      },
+      {
+        "brand_name": "Saturn",
+        "models": []
+      },
+      {
+        "brand_name": "Scion",
+        "models": []
+      },
+      {
+        "brand_name": "SEAT",
+        "models": []
+      },
+      {
+        "brand_name": "Selena",
+        "models": []
+      },
+      {
+        "brand_name": "Shuanghuan",
+        "models": []
+      },
+      {
+        "brand_name": "Skoda",
+        "models": []
+      },
+      {
+        "brand_name": "SMA",
+        "models": []
+      },
+      {
+        "brand_name": "Smart",
+        "models": []
+      },
+      {
+        "brand_name": "SouEast",
+        "models": []
+      },
+      {
+        "brand_name": "Soyat",
+        "models": []
+      },
+      {
+        "brand_name": "SsangYong",
+        "models": []
+      },
+      {
+        "brand_name": "Star",
+        "models": []
+      },
+      {
+        "brand_name": "Subaru",
+        "models": []
+      },
+      {
+        "brand_name": "Suzuki",
+        "models": []
+      },
+      {
+        "brand_name": "Talbot",
+        "models": []
+      },
+      {
+        "brand_name": "Tarpan Honker",
+        "models": []
+      },
+      {
+        "brand_name": "TATA",
+        "models": []
+      },
+      {
+        "brand_name": "Tatra",
+        "models": []
+      },
+      {
+        "brand_name": "Tazzari",
+        "models": []
+      },
+      {
+        "brand_name": "Tesla",
+        "models": []
+      },
+      {
+        "brand_name": "Tiger",
+        "models": []
+      },
+      {
+        "brand_name": "Toyota",
+        "models": []
+      },
+      {
+        "brand_name": "Trabant",
+        "models": []
+      },
+      {
+        "brand_name": "Triumph",
+        "models": []
+      },
+      {
+        "brand_name": "Van Hool",
+        "models": []
+      },
+      {
+        "brand_name": "Vauxhall",
+        "models": []
+      },
+      {
+        "brand_name": "Vepr",
+        "models": []
+      },
+      {
+        "brand_name": "Volkswagen",
+        "models": []
+      },
+      {
+        "brand_name": "Volvo",
+        "models": []
+      },
+      {
+        "brand_name": "Wanderer",
+        "models": []
+      },
+      {
+        "brand_name": "Wanfeng",
+        "models": []
+      },
+      {
+        "brand_name": "Wartburg",
+        "models": []
+      },
+      {
+        "brand_name": "Willys",
+        "models": []
+      },
+      {
+        "brand_name": "Xin kai",
+        "models": []
+      },
+      {
+        "brand_name": "Yogomo",
+        "models": []
+      },
+      {
+        "brand_name": "Zotye",
+        "models": []
+      },
+      {
+        "brand_name": "Zuk",
+        "models": []
+      },
+      {
+        "brand_name": "ZX",
+        "models": []
+      },
+      {
+        "brand_name": "Богдан",
+        "models": []
+      },
+      {
+        "brand_name": "ВАЗ",
+        "models": []
+      },
+      {
+        "brand_name": "ВИС",
+        "models": []
+      },
+      {
+        "brand_name": "ГАЗ",
+        "models": []
+      },
+      {
+        "brand_name": "ГолАЗ",
+        "models": []
+      },
+      {
+        "brand_name": "ЕРАЗ",
+        "models": []
+      },
+      {
+        "brand_name": "ЗАЗ",
+        "models": []
+      },
+      {
+        "brand_name": "ЗИЛ",
+        "models": []
+      },
+      {
+        "brand_name": "ЗИМ",
+        "models": []
+      },
+      {
+        "brand_name": "ИЖ",
+        "models": []
+      },
+      {
+        "brand_name": "ЛуАЗ",
+        "models": []
+      },
+      {
+        "brand_name": "Москвич/АЗЛК",
+        "models": []
+      },
+      {
+        "brand_name": "Прицеп",
+        "models": []
+      },
+      {
+        "brand_name": "РАФ",
+        "models": []
+      },
+      {
+        "brand_name": "Ретро автомобили",
+        "models": []
+      },
+      {
+        "brand_name": "Самодельный",
+        "models": []
+      },
+      {
+        "brand_name": "СеАЗ",
+        "models": []
+      },
+      {
+        "brand_name": "СМЗ",
+        "models": []
+      },
+      {
+        "brand_name": "УАЗ",
+        "models": []
+      }
+    ]
+  },
+  {
+    "cat_name": "Мото",
+    "brands": []
+  },
+  {
+    "cat_name": "Грузовики",
+    "brands": []
+  },
+  {
+    "cat_name": "Прицепы",
+    "brands": []
+  },
+  {
+    "cat_name": "Спецтехника",
+    "brands": []
+  },
+  {
+    "cat_name": "Сельхозтехника",
+    "brands": []
+  },
+  {
+    "cat_name": "Автобусы",
+    "brands": []
+  },
+  {
+    "cat_name": "Водный транспорт",
+    "brands": []
+  },
+  {
+    "cat_name": "Воздушный транспорт",
+    "brands": []
+  },
+  {
+    "cat_name": "Автодома",
+    "brands": []
+  }
+]

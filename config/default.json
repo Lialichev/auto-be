@@ -1,6 +1,6 @@
 {
   "port": 5000,
-  "jwtSecret": "rest api MERN",
-  "mongoUri": "mongodb://localhost:27017/api-docx",
+  "jwtSecret": "auto-rest",
+  "mongoUri": "mongodb://localhost:27017/auto",
   "baseUrl": "http://localhost:5000"
 }
