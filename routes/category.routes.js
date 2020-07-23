@@ -34,6 +34,8 @@ router.get('/', async (req, res) => {
             return res.status(400).json({ message: 'Categories not found' });
         }
 
+        console.log('GET Categories');
+
         res.json(categories);
     } catch (e) {
         res.status(500).json({ message: 'Error get Categories', error: e });
