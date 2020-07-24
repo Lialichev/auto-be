@@ -4,74 +4,74 @@ const router = Router();
 
 // POST create /api/category
 router.post('/', async (req, res) => {
-    try {
-        const { name } = req.body;
+  try {
+    const { name } = req.body;
 
-        const existing = await Category.findOne({ name });
+    const existing = await Category.findOne({ name });
 
-        if (existing) {
-            return res.status(400).json({ message: 'Category already exists' });
-        }
-
-        const newCategory = new Category({
-            name
-        });
-
-        await newCategory.save();
-
-        res.status(201).json({ message: 'Success create' });
-    } catch (e) {
-        res.status(500).json({ message: 'Error Category create', error: e });
+    if (existing) {
+      return res.status(400).json({ message: 'Category already exists' });
     }
+
+    const newCategory = new Category({
+      name
+    });
+
+    await newCategory.save();
+
+    res.status(201).json({ message: 'Success create' });
+  } catch (e) {
+    res.status(500).json({ message: 'Error Category create', error: e });
+  }
 });
 
 // GET All /api/category
 router.get('/', async (req, res) => {
-    try {
-        const categories = await Category.find();
+  try {
+    const categories = await Category.find();
 
-        if (!categories.length) {
-            return res.status(400).json({ message: 'Categories not found' });
-        }
-
-        console.log('GET Categories');
-
-        res.json(categories);
-    } catch (e) {
-        res.status(500).json({ message: 'Error get Categories', error: e });
+    if (!categories.length) {
+      return res.status(400).json({ message: 'Categories not found' });
     }
+
+    console.log('GET Categories');
+
+    res.json(categories);
+  } catch (e) {
+    res.status(500).json({ message: 'Error get Categories', error: e });
+  }
 });
 
 // GET by ID /api/category/:id
 router.get('/:id', async (req, res) => {
-    try {
-        const category = await Category.findById(req.params.id);
+  try {
+    const category = await Category.findById(req.params.id);
 
-        if (!category) {
-            return res.status(400).json({ message: 'Category not found' });
-        }
-
-        res.json(category);
-    } catch (e) {
-        res.status(500).json({ message: 'Error get Category', error: e });
+    if (!category) {
+      return res.status(400).json({ message: 'Category not found' });
     }
+
+    res.json(category);
+  } catch (e) {
+    res.status(500).json({ message: 'Error get Category', error: e });
+  }
 });
 
 // PUT Update by ID /api/category/:id
 router.put('/:id', async (req, res) => {
-    try {
-        const { name } = req.body;
+  try {
+    const { name } = req.body;
 
-        if (name) {
-            await Category.findByIdAndUpdate(req.params.id, { $set: { "name": name } });
+    if (name) {
+      await Category.findByIdAndUpdate(req.params.id, { $set: { "name": name } });
 
-            return res.json({ message: 'Success update' });
-        }
-
-        res.status(400).json({ message: 'Category not updated' });
-    } catch (e) {
-        res.status(500).json({ message: 'Error update Category', error: e });
+      return res.json({ message: 'Success update' });
     }
+
+    res.status(400).json({ message: 'Category not updated' });
+  } catch (e) {
+    res.status(500).json({ message: 'Error update Category', error: e });
+  }
 });
 
 module.exports = router;
