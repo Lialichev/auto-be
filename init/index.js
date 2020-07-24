@@ -2,52 +2,45 @@ const mongoose = require('mongoose');
 const config = require('config');
 const Category = require('../models/Category');
 const Brand = require('../models/Brand');
+const Model = require('../models/Model');
 const initData = require('./init.json');
-const find = require('lodash/find');
-const get = require('lodash/get');
-const map = require('lodash/map');
 
 async function start() {
 
-    try {
+  try {
 
-        await mongoose.connect(config.get('mongoUri'), {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-            useCreateIndex: true,
-            useFindAndModify: false
-        });
+    await mongoose.connect(config.get('mongoUri'), {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useCreateIndex: true,
+      useFindAndModify: false
+    });
 
-        await Category.deleteMany();
+    await Category.deleteMany();
+    await Brand.deleteMany();
+    await Model.deleteMany();
 
-        const initCategories = initData.map(({ cat_name: name }) => ({ name }));
+    for (const { cat_name, brands } of initData) {
+      const category = await new Category({ name: cat_name }).save();
 
-        const categories = await Category.create(initCategories);
+      for (const { brand_name, models } of brands) {
+        const brand = await new Brand({ name: brand_name, category_id: category._id }).save();
 
-        await Brand.deleteMany();
-
-        let initBrands = [];
-
-        categories.map((item) => {
-            map(get(find(initData, { cat_name: item.name }), 'brands'), ({ brand_name }) => {
-                initBrands.push({
-                    name: brand_name,
-                    category_id: item._id
-                });
-            });
-        });
-
-        const brands = await Brand.create(initBrands);
-
-        console.log('Init success');
-        process.exit();
-
-    } catch (e) {
-
-        console.log('Init Brand Error', e.message);
-        process.exit();
-
+        for (const name of models) {
+          await new Model({ name, brand_id: brand._id }).save();
+        }
+      }
     }
+
+    console.log('Init success');
+    process.exit();
+
+  } catch (e) {
+
+    console.log('Init Error', e.message);
+    process.exit();
+
+  }
 
 }
 
