@@ -2,7 +2,7 @@ const { Router } = require('express');
 const Category = require('../models/Category');
 const router = Router();
 
-// /api/category
+// POST create /api/category
 router.post('/', async (req, res) => {
     try {
         const { name } = req.body;
@@ -25,7 +25,7 @@ router.post('/', async (req, res) => {
     }
 });
 
-// /api/category
+// GET All /api/category
 router.get('/', async (req, res) => {
     try {
         const categories = await Category.find();
@@ -42,7 +42,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-// /api/category/:id
+// GET by ID /api/category/:id
 router.get('/:id', async (req, res) => {
     try {
         const category = await Category.findById(req.params.id);
@@ -57,7 +57,7 @@ router.get('/:id', async (req, res) => {
     }
 });
 
-// /api/category/:id
+// PUT Update by ID /api/category/:id
 router.put('/:id', async (req, res) => {
     try {
         const { name } = req.body;
