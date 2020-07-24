@@ -7,7 +7,7 @@ const schema = new Schema(
       category_id: { type: Types.ObjectId, required: true, ref: 'Category' },
       brand_id: { type: Types.ObjectId, required: true, ref: 'Brand' },
       model_id: { type: Types.ObjectId, required: true, ref: 'Model' },
-      year: { type: Number, required: true, min: 4, max: 4 },
+      year: { type: Number, required: true, minLength: 4, maxLength: 4 },
       modification: { type: String },
       body_type_id: { type: Types.ObjectId, required: true, ref: 'BodyType' },
       mileage: { type: Number, required: true, min: 1, max: 99999 },
