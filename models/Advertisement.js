@@ -7,7 +7,7 @@ const schema = new Schema(
       category_id: { type: Types.ObjectId, required: true, ref: 'Category' },
       brand_id: { type: Types.ObjectId, required: true, ref: 'Brand' },
       model_id: { type: Types.ObjectId, required: true, ref: 'Model' },
-      year: { type: Number, required: true, minLength: 4, maxLength: 4 },
+      year: { type: Number, required: true, minlength: 4, maxlength: 4 },
       modification: { type: String },
       body_type_id: { type: Types.ObjectId, required: true, ref: 'BodyType' },
       mileage: { type: Number, required: true, min: 1, max: 99999 },
@@ -21,7 +21,7 @@ const schema = new Schema(
       auctions: { type: Boolean, default: false },
       exchangesAutoAllowed: { type: Boolean, default: false }
     },
-    description: { type: String, maxLength: 2000 },
+    description: { type: String, maxlength: 2000 },
     additional_characteristics: {
       color_id: { type: Types.ObjectId, ref: 'Color' },
       technical_condition_id: { type: Types.ObjectId, ref: 'TechnicalCondition' },
