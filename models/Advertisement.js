@@ -24,6 +24,7 @@ const schema = new Schema(
     description: { type: String, maxlength: 2000 },
     additional_characteristics: {
       color_id: { type: Types.ObjectId, ref: 'Color' },
+      metallic: { type: Boolean, default: false },
       technical_condition_id: { type: Types.ObjectId, ref: 'TechnicalCondition' },
       country_import_id: { type: Types.ObjectId, ref: 'Country' },
     },
@@ -33,7 +34,7 @@ const schema = new Schema(
     agreement: { type: Boolean, required: true },
     published_date: { type: Date, required: true, default: new Date() },
     updated_date: { type: Date, required: true, default: new Date() },
-    owner_id: { type: Types.ObjectId, required: true, ref: 'User' },
+    owner_id: { type: Types.ObjectId, ref: 'User' },
     status_id: { type: Types.ObjectId, required: true, ref: 'Status' }
   },
   {

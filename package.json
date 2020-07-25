@@ -10,7 +10,10 @@
     "server": "nodemon app.js",
     "init:CBMB:db": "node init/CBMB",
     "init:region:db": "node ./init/Region",
-    "init:city:db": "node ./init/City"
+    "init:city:db": "node ./init/City",
+    "init:currency:db": "node ./init/Currency",
+    "init:color:db": "node ./init/Color",
+    "init:TechnicalCondition:db": "node ./init/TechnicalCondition"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
