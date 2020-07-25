@@ -9,7 +9,8 @@
     "start": "node app.js",
     "server": "nodemon app.js",
     "init:CBMB:db": "node init/CBMB",
-    "init:region:db": "node ./init/Region"
+    "init:region:db": "node ./init/Region",
+    "init:city:db": "node ./init/City"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
