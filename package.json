@@ -8,7 +8,8 @@
   "scripts": {
     "start": "node app.js",
     "server": "nodemon app.js",
-    "init:db": "node ./init"
+    "init:CBMB:db": "node init/CBMB",
+    "init:region:db": "node ./init/Region"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
