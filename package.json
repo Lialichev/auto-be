@@ -13,7 +13,8 @@
     "init:city:db": "node ./init/City",
     "init:currency:db": "node ./init/Currency",
     "init:color:db": "node ./init/Color",
-    "init:TechnicalCondition:db": "node ./init/TechnicalCondition"
+    "init:TechnicalCondition:db": "node ./init/TechnicalCondition",
+    "init:country:db": "node ./init/Country"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
