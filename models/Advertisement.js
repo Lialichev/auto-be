@@ -23,6 +23,21 @@ const schema = new Schema(
     },
     description: { type: String, maxlength: 2000 },
     additional_characteristics: {
+      gearbox: { type: Types.ObjectId, ref: 'Gearbox' },
+      fuel: {
+        type: { type: Types.ObjectId, ref: 'Fuel' },
+        city: { type: Number },
+        route: { type: Number },
+        combine: { type: Number },
+      },
+      engine_volume_liters: { type: Types.ObjectId, ref: 'EngineVolumeLiters' },
+      power: {
+        type: { type: Types.ObjectId, ref: 'PowerType' },
+        value: { type: Number },
+      },
+      drive: { type: Types.ObjectId, ref: 'Drive' },
+      doors: { type: Number },
+      seats: { type: Number },
       color_id: { type: Types.ObjectId, ref: 'Color' },
       metallic: { type: Boolean, default: false },
       technical_condition_id: { type: Types.ObjectId, ref: 'TechnicalCondition' },
@@ -35,7 +50,8 @@ const schema = new Schema(
     published_date: { type: Date, required: true, default: new Date() },
     updated_date: { type: Date, required: true, default: new Date() },
     owner_id: { type: Types.ObjectId, ref: 'User' },
-    status_id: { type: Types.ObjectId, required: true, ref: 'Status' }
+    status_id: { type: Types.ObjectId, required: true, ref: 'Status' },
+    digits: { type: String, unique: true }
   },
   {
     versionKey: false

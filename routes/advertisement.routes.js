@@ -40,7 +40,8 @@ router.post('/', async (req, res) => {
         phone: req.body.contacts.phone
       },
       agreement: req.body.agreement,
-      status_id: status
+      status_id: status,
+      digits: req.body.digits
     }).save();
 
     res.status(201).json({ message: 'Success Advertisement create' });

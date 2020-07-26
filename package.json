@@ -19,6 +19,7 @@
     "init:all:db": "npm run init:CBMB:db && npm run init:region:db && npm run init:city:db && npm run init:currency:db && npm run init:color:db && npm run init:TechnicalCondition:db && npm run init:country:db && npm run init:status:db"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "bcryptjs": "^2.4.3",
     "config": "^3.2.5",
     "cors": "^2.8.5",
