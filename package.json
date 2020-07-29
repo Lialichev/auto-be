@@ -19,7 +19,7 @@
     "init:gearbox:db": "node ./init/Gearbox",
     "init:fuel:db": "node ./init/Fuel",
     "init:EVL:db": "node ./init/EngineVolumeLiters",
-    "init:all:db": "npm run init:CBMB:db && npm run init:region:db && npm run init:city:db && npm run init:currency:db && npm run init:color:db && npm run init:TechnicalCondition:db && npm run init:country:db && npm run init:status:db && npm run init:gearbox:db && npm run init:fuel:db && npm run init:EVL:db"
+    "init:PowerType:db": "node ./init/PowerType"
   },
   "dependencies": {
     "axios": "^0.19.2",

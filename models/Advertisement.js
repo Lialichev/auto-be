@@ -47,8 +47,8 @@ const schema = new Schema(
       phone: { type: String, required: true }
     },
     agreement: { type: Boolean, required: true },
-    published_date: { type: Date, required: true, default: new Date() },
-    updated_date: { type: Date, required: true, default: new Date() },
+    published_date: { type: Date, required: true, default: Date.now },
+    updated_date: { type: Date, required: true, default: Date.now },
     owner_id: { type: Types.ObjectId, ref: 'User' },
     status_id: { type: Types.ObjectId, required: true, ref: 'Status' },
     digits: { type: String, unique: true }
