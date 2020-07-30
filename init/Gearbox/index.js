@@ -3,7 +3,7 @@ const config = require('config');
 const Gearbox = require('../../models/Gearbox');
 const initData = require('./init.json');
 
-async function start() {
+const start = async () => {
 
   try {
 
@@ -19,7 +19,6 @@ async function start() {
     await Gearbox.create(initData.map((name) => ({ name })));
 
     console.log('Init Gearbox success');
-    process.exit();
 
   } catch (e) {
 
@@ -30,4 +29,4 @@ async function start() {
 
 }
 
-start();
+module.exports = start;

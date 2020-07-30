@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const config = require('config');
-const Country = require('../../models/Country');
+const Drive = require('../../models/Drive');
 const initData = require('./init.json');
 
 const start = async () => {
@@ -14,15 +14,15 @@ const start = async () => {
       useFindAndModify: false
     });
 
-    await Country.deleteMany();
+    await Drive.deleteMany();
 
-    await Country.create(initData.map((name) => ({ name })));
+    await Drive.create(initData.map((name) => ({ name })));
 
-    console.log('Init Country success');
+    console.log('Init Drive success');
 
   } catch (e) {
 
-    console.log('Init Country Error', e.message);
+    console.log('Init Drive Error', e.message);
     process.exit();
 
   }

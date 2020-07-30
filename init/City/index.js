@@ -3,31 +3,30 @@ const config = require('config');
 const City = require('../../models/City');
 const initData = require('./init.json');
 
-async function start() {
+const start = async () => {
 
-  try {
+    try {
 
-    await mongoose.connect(config.get('mongoUri'), {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useCreateIndex: true,
-      useFindAndModify: false
-    });
+        await mongoose.connect(config.get('mongoUri'), {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+            useCreateIndex: true,
+            useFindAndModify: false
+        });
 
-    await City.deleteMany();
+        await City.deleteMany();
 
-    await City.create(initData.map((name) => ({ name })));
+        await City.create(initData.map((name) => ({ name })));
 
-    console.log('Init City success');
-    process.exit();
+        console.log('Init City success');
 
-  } catch (e) {
+    } catch (e) {
 
-    console.log('Init City Error', e.message);
-    process.exit();
+        console.log('Init City Error', e.message);
+        process.exit();
 
-  }
+    }
 
 }
 
-start();
+module.exports = start;

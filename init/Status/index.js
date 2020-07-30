@@ -3,7 +3,7 @@ const config = require('config');
 const Status = require('../../models/Status');
 const initData = require('./init.json');
 
-async function start() {
+const start = async () => {
 
   try {
 
@@ -19,7 +19,6 @@ async function start() {
     await Status.create(initData.map((name) => ({ name })));
 
     console.log('Init Status success');
-    process.exit();
 
   } catch (e) {
 
@@ -30,4 +29,4 @@ async function start() {
 
 }
 
-start();
+module.exports = start;
