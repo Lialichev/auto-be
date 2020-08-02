@@ -4,20 +4,20 @@ const schema = new Schema(
   {
     photos: [ { type: String } ],
     general: {
-      category_id: { type: Types.ObjectId, required: true, ref: 'Category' },
-      brand_id: { type: Types.ObjectId, required: true, ref: 'Brand' },
-      model_id: { type: Types.ObjectId, required: true, ref: 'Model' },
+      category: { type: Types.ObjectId, required: true, ref: 'Category' },
+      brand: { type: Types.ObjectId, required: true, ref: 'Brand' },
+      model: { type: Types.ObjectId, required: true, ref: 'Model' },
       year: { type: Number, required: true, minlength: 4, maxlength: 4 },
       modification: { type: String },
-      body_type_id: { type: Types.ObjectId, required: true, ref: 'BodyType' },
+      body_type: { type: Types.ObjectId, required: true, ref: 'BodyType' },
       mileage: { type: Number, required: true, min: 1, max: 99999 },
-      region_id: { type: Types.ObjectId, required: true, ref: 'Region' },
-      city_id: { type: Types.ObjectId, required: true, ref: 'City' },
+      region: { type: Types.ObjectId, required: true, ref: 'Region' },
+      city: { type: Types.ObjectId, required: true, ref: 'City' },
       VIN: { type: String },
     },
     price: {
       value: { type: Number, required: true },
-      currency_id: { type: Types.ObjectId, required: true, ref: 'Currency' },
+      currency: { type: Types.ObjectId, required: true, ref: 'Currency' },
       auctions: { type: Boolean, default: false },
       exchangesAutoAllowed: { type: Boolean, default: false }
     },
@@ -38,10 +38,10 @@ const schema = new Schema(
       drive: { type: Types.ObjectId, ref: 'Drive' },
       doors: { type: Number },
       seats: { type: Number },
-      color_id: { type: Types.ObjectId, ref: 'Color' },
+      color: { type: Types.ObjectId, ref: 'Color' },
       metallic: { type: Boolean, default: false },
-      technical_condition_id: { type: Types.ObjectId, ref: 'TechnicalCondition' },
-      country_import_id: { type: Types.ObjectId, ref: 'Country' },
+      technical_condition: { type: Types.ObjectId, ref: 'TechnicalCondition' },
+      country_import: { type: Types.ObjectId, ref: 'Country' },
     },
     contacts: {
       phone: { type: String, required: true }
@@ -49,8 +49,8 @@ const schema = new Schema(
     agreement: { type: Boolean, required: true },
     published_date: { type: Date, required: true, default: Date.now },
     updated_date: { type: Date, required: true, default: Date.now },
-    owner_id: { type: Types.ObjectId, ref: 'User' },
-    status_id: { type: Types.ObjectId, required: true, ref: 'Status' },
+    owner: { type: Types.ObjectId, ref: 'User' },
+    status: { type: Types.ObjectId, required: true, ref: 'Status' },
     digits: { type: String, unique: true }
   },
   {
