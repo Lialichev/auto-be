@@ -9,6 +9,6 @@ router.post('/', advertisement.create);
 router.get('/', advertisement.findAll);
 
 // GET Get one /api/advertisement/:id
-router.get('/id', advertisement.findOne);
+router.get('/:id', advertisement.findOne);
 
 module.exports = router;

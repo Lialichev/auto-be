@@ -1,5 +1,6 @@
 const Advertisement = require('../models/Advertisement');
 const Status = require('../models/Status');
+const axios = require('axios');
 
 exports.create = async (req, res) => {
   try {
@@ -74,6 +75,14 @@ exports.create = async (req, res) => {
         country_import: req.body.additional_characteristics.country_import,
       };
     }
+
+    // if (req.body.digits) {
+    //   const autoInfo = await axios(`https://baza-gai.com.ua/nomer/${ req.body.digits }`, {
+    //     headers: {
+    //       "Accept": "application/json"
+    //     }
+    //   });
+    // }
 
     const status = await Status.findOne({ name: "Moderation" });
 
