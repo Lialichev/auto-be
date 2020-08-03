@@ -1,5 +1,19 @@
 const Advertisement = require('../models/Advertisement');
+const Category = require('../models/Category');
+const Brand = require('../models/Brand');
+const Model = require('../models/Model');
+const Region = require('../models/Region');
+const City = require('../models/City');
+const Currency = require('../models/Currency');
+const Fuel = require('../models/Fuel');
+const PowerType = require('../models/PowerType');
 const Status = require('../models/Status');
+const Gearbox = require('../models/Gearbox');
+const EngineVolumeLiters = require('../models/EngineVolumeLiters');
+const Drive = require('../models/Drive');
+const Color = require('../models/Color');
+const TechnicalCondition = require('../models/TechnicalCondition');
+const Country = require('../models/Country');
 const axios = require('axios');
 
 exports.create = async (req, res) => {
@@ -133,7 +147,84 @@ exports.findAll = async (req, res) => {
 
 exports.findOne = async (req, res) => {
   try {
-    const advertisement = await Advertisement.findById(req.params.id);
+    const advertisement = await Advertisement.findById(req.params.id)
+      .populate([
+        {
+          path: 'general',
+          populate: [
+            {
+              path: "category",
+              model: Category,
+            },
+            {
+              path: "brand",
+              model: Brand,
+            },
+            {
+              path: "model",
+              model: Model,
+            },
+            {
+              path: "region",
+              model: Region,
+            },
+            {
+              path: "city",
+              model: City,
+            },
+          ]
+        },
+        {
+          path: 'price',
+          populate: [
+            {
+              path: "currency",
+              model: Currency,
+            },
+          ]
+        },
+        {
+          path: 'status',
+          model: Status,
+        },
+        {
+          path: 'additional_characteristics',
+          populate: [
+            {
+              path: "fuel.type",
+              model: Fuel,
+            },
+            {
+              path: "power.type",
+              model: PowerType,
+            },
+            {
+              path: "gearbox",
+              model: Gearbox,
+            },
+            {
+              path: "engine_volume_liters",
+              model: EngineVolumeLiters,
+            },
+            {
+              path: "drive",
+              model: Drive,
+            },
+            {
+              path: "color",
+              model: Color,
+            },
+            {
+              path: "technical_condition",
+              model: TechnicalCondition,
+            },
+            {
+              path: "country_import",
+              model: Country,
+            },
+          ]
+        },
+      ]);
 
     if (!advertisement) {
       return res.status(400).json({ message: 'Advertisement not found' });
