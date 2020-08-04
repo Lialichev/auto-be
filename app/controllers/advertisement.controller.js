@@ -120,8 +120,12 @@ exports.create = async (req, res) => {
 
 exports.findAll = async (req, res) => {
   try {
+    const maxLimit = 100;
+
     const page = req.query.page ? Number(req.query.page) : 0;
-    const limit = req.query.limit ? Number(req.query.limit) : 10;
+    const limit = req.query.limit
+        ? (Number(req.query.limit) <= maxLimit ? Number(req.query.limit) : maxLimit)
+        : 20;
     const sort = req.query.sort ? req.query.sort : '_id';
     const order_sort = req.query.order_sort ? req.query.order_sort : -1;
 
