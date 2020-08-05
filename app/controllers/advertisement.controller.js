@@ -174,6 +174,7 @@ exports.findOne = async (req, res) => {
                 {
                     path: 'general',
                     populate: [
+
                         {
                             path: "category",
                             model: Category,
