@@ -14,7 +14,9 @@ const Drive = require('../models/Drive');
 const Color = require('../models/Color');
 const TechnicalCondition = require('../models/TechnicalCondition');
 const Country = require('../models/Country');
-// const axios = require('axios');
+const get = require('lodash/get');
+const find = require('lodash/find');
+const axios = require('axios');
 
 exports.create = async (req, res) => {
   try {
@@ -23,6 +25,7 @@ exports.create = async (req, res) => {
     let price = {};
     let additional_characteristics = {};
     let contacts = {};
+    let num_info = {};
 
     if (req.body.general) {
       general = {
@@ -90,13 +93,25 @@ exports.create = async (req, res) => {
       };
     }
 
-    // if (req.body.digits) {
-    //   const autoInfo = await axios(`https://baza-gai.com.ua/nomer/${ req.body.digits }`, {
-    //     headers: {
-    //       "Accept": "application/json"
-    //     }
-    //   });
-    // }
+    if (req.body.digits) {
+      const autoInfo = await axios(encodeURI(`https://baza-gai.com.ua/nomer/${ req.body.digits }`), {
+        headers: {
+          "Accept": "application/json"
+        }
+      });
+
+      const data = autoInfo.data;
+
+      if (data) {
+        num_info = {
+          stolen: data.stolen,
+          year: Number(data.year),
+          last_operation: get(find(data.operations, { 'isLast': true }), 'regAt'),
+          brand: data.vendor,
+          model: data.model,
+        };
+      }
+    }
 
     const status = await Status.findOne({ name: "Moderation" });
 
@@ -109,7 +124,8 @@ exports.create = async (req, res) => {
       contacts,
       agreement: req.body.agreement,
       status: status,
-      digits: req.body.digits
+      digits: req.body.digits,
+      num_info
     }).save();
 
     res.status(201).json({ message: 'Success Advertisement create' });

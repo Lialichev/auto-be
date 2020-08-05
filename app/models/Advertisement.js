@@ -52,7 +52,14 @@ const schema = new Schema(
         updated_date: { type: Date, required: true, default: Date.now },
         owner: { type: Types.ObjectId, ref: 'User' },
         status: { type: Types.ObjectId, required: true, ref: 'Status' },
-        digits: { type: String, unique: true }
+        digits: { type: String, unique: true },
+        num_info: {
+            stolen: { type: Boolean },
+            year: { type: Number },
+            last_operation: { type: String },
+            brand: { type: String },
+            model: { type: String },
+        }
     },
     {
         versionKey: false
