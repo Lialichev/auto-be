@@ -1,12 +1,13 @@
 const { Router } = require('express');
 const router = Router();
 const advertisement = require("../controllers/advertisement.controller");
+const filter = require("../middleware/filter.middleware");
 
 // POST create /api/advertisement
 router.post('/', advertisement.create);
 
 // GET Get All /api/advertisement
-router.get('/', advertisement.findAll);
+router.get('/', filter, advertisement.findAll);
 
 // GET Get one /api/advertisement/:id
 router.get('/:id', advertisement.findOne);

@@ -17,7 +17,6 @@ const Country = require('../models/Country');
 const get = require('lodash/get');
 const find = require('lodash/find');
 const axios = require('axios');
-const range = require('../helpers/range.helper');
 
 exports.create = async (req, res) => {
     try {
@@ -146,34 +145,7 @@ exports.findAll = async (req, res) => {
         const sort = req.query.sort ? req.query.sort : '_id';
         const order_sort = req.query.order_sort ? req.query.order_sort : -1;
 
-        // Filter
-        let filter = {};
-
-        if (req.query.category) {
-            filter['general.category'] = req.query.category;
-        }
-
-        if (req.query.brand) {
-            filter['general.brand'] = req.query.brand;
-        }
-
-        if (req.query.model) {
-            filter['general.model'] = req.query.model;
-        }
-
-        if (req.query.region) {
-            filter['general.region'] = req.query.region;
-        }
-
-        if (req.query.from_year || req.query.to_year) {
-            filter['general.year'] = range(req.query.from_year, req.query.to_year);
-        }
-
-        if (req.query.min_price || req.query.max_price) {
-            filter['price.value'] = range(req.query.min_price, req.query.max_price);
-        }
-
-        const advertisement = await Advertisement.find(filter)
+        const advertisement = await Advertisement.find(req.filter)
             .sort({ [sort]: order_sort })
             .limit(limit)
             .skip(limit * page);
@@ -182,7 +154,7 @@ exports.findAll = async (req, res) => {
             return res.status(400).json({ message: 'Advertisement not found' });
         }
 
-        const total = await Advertisement.countDocuments(filter);
+        const total = await Advertisement.countDocuments(req.filter);
 
         res.json({
             data: advertisement,
