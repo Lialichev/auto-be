@@ -17,6 +17,7 @@ const Country = require('../models/Country');
 const get = require('lodash/get');
 const find = require('lodash/find');
 const axios = require('axios');
+const range = require('../helpers/range.helper');
 
 exports.create = async (req, res) => {
     try {
@@ -165,10 +166,11 @@ exports.findAll = async (req, res) => {
         }
 
         if (req.query.from_year || req.query.to_year) {
-            filter['general.year'] = {
-                $gte: Number(req.query.from_year),
-                $lte: Number(req.query.to_year)
-            };
+            filter['general.year'] = range(req.query.from_year, req.query.to_year);
+        }
+
+        if (req.query.min_price || req.query.max_price) {
+            filter['price.value'] = range(req.query.min_price, req.query.max_price);
         }
 
         const advertisement = await Advertisement.find(filter)
