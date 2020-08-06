@@ -18,7 +18,6 @@
     "init:status:db": "node app/init/Status/alone",
     "init:gearbox:db": "node app/init/Gearbox/alone",
     "init:fuel:db": "node app/init/Fuel/alone",
-    "init:EVL:db": "node app/init/EngineVolumeLiters/alone",
     "init:PowerType:db": "node app/init/PowerType/alone",
     "init:drive:db": "node app/init/Drive/alone",
     "init:db": "node app/init/index.js"

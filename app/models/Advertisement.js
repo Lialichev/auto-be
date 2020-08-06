@@ -30,7 +30,7 @@ const schema = new Schema(
                 route: { type: Number },
                 combine: { type: Number },
             },
-            engine_volume_liters: { type: Types.ObjectId, ref: 'EngineVolumeLiters' },
+            engine_volume_liters: { type: Number },
             power: {
                 type: { type: Types.ObjectId, ref: 'PowerType' },
                 value: { type: Number },
