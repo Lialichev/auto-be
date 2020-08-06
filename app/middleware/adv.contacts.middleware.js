@@ -6,7 +6,7 @@ module.exports = async (req, res, next) => {
     req.contacts = {};
 
     if (req.body.contacts) {
-        req.ontacts = {
+        req.contacts = {
             phone: req.body.contacts.phone
         };
     }
