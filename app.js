@@ -13,6 +13,7 @@ app.use('/api/category', require('./app/routes/category.routes'));
 app.use('/api/brand', require('./app/routes/brand.routes'));
 app.use('/api/model', require('./app/routes/model.routes'));
 app.use('/api/advertisement', require('./app/routes/advertisement.routes'));
+app.use('/api/region', require('./app/routes/region.routes'));
 
 const PORT = config.get('port') || 5000;
 
